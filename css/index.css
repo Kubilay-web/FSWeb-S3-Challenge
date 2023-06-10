@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -53,16 +140,24 @@ table {
 
 html {
     font-size: 62.5%;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, i {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i {
     text-decoration: none;
 }
 
@@ -78,16 +173,16 @@ h3 {
     font-size: 5rem;
 }
 
-p, a {
+p,
+a {
     font-size: 3rem;
 }
 
 
-.main-container{
-    width:100%;
-    max-width:1920px;
-    min-width:480px;
-    margin:auto;
+.main-container {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
 }
 
 /* header section */
@@ -100,49 +195,59 @@ header {
     background-repeat: no-repeat;
 }
 
-.header-container{
-    width:100%;
-    height:240px;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
-    padding:30px 0px 0px 0px;
+.header-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 0px 0px 0px;
     background: rgba(8, 15, 8, 0.4);
 }
 
-.title-container h1{
-    font-size:4rem;
-    color:#fff;
+.title-container h1 {
+    font-size: 4rem;
+    color: #fff;
 }
 
-.menu-container{
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-around;
-    padding:10px 0px 0px 0px;
-    gap:120px;
+.menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px 0px 0px;
+    gap: 120px;
 }
 
-.menu-container h3{
-    color:#fff;
-    font-size:2rem;
+.menu-container h3 {
+    color: #fff;
+    font-size: 2rem;
 }
 
-.social-container{
-    display:flex;
-    flex-direction:row;
-    gap:60px;
-    padding:20px 0px 0px 0px;
+.social-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px 0px 0px 0px;
+}
+
+.fa-brands,
+.fab {
+    font-family: "Font Awesome 6 Brands";
+    color: #fff;
 }
 
 /* spacers */
 .spacer {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     background-color: rgb(0, 4, 17);
 }
+
 .spacer-sm {
     width: 100%;
     height: 10vh;
@@ -152,15 +257,22 @@ header {
 /* gallery section */
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: auto;
     text-align: center;
     background-color: rgb(0, 4, 17);
+    padding: 0px 0px 50px 0px;
+}
+
+.gallery h2 {
+    color: #fff;
+    font-size: 3rem;
+    padding: 40px 0px 40px 0px;
 }
 
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
+    height: auto;
     text-align: center;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
@@ -169,20 +281,37 @@ header {
 }
 
 .about-container {
-    height: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     background-color: rgb(0, 4, 17, .8);
 }
 
-.about h2 {
-    width: 100%;
+.text {
+    width: 50%;
 }
 
-.about-container .text {
-    width: 50%;
+.about h2 {
+    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    padding: 100px 0px 20px 0px;
+}
+
+
+.text h3 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.text p {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 0px 0px 40px 0px;
 }
 
 /* contact us section */
@@ -201,21 +330,52 @@ header {
     background-color: rgb(0, 4, 17, .8);
 }
 
-.contact h2 {
-    padding-top: 5vh;
+.contact-container h2 {
+    width: 100%;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 40px 0px 20px 0px;
+}
+
+.address h3 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.address p {
+    color: #fff;
+    font-size: 1.5rem;
 }
 
 .contact h3 {
-    padding-top: 2.5vh;
+    color: #fff;
+    font-size: 2rem;
 }
 
 .contact p {
-    padding: .5vh 0;
+    color: #fff;
+    font-size: 1.5rem;
 }
+
+.contacts h3 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.contacts a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
 
 .info {
     width: 100%;
+    padding: 0px 0px 50px 0px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -225,7 +385,6 @@ header {
 
 .hours {
     width: 25%;
-    padding-bottom: 2.5vh;
 }
 
 .contacts {
@@ -235,54 +394,190 @@ header {
 /* footer section */
 footer {
     width: 100%;
-    height: 15vh;
-    padding-top: 2.5vh;
+    height: auto;
+    background-color: #000411;
+}
+
+.nav-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px 0px 0px;
+    gap: 30px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-final {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0px 40px 0px;
+}
+
+.form-container h2 {
+    width: 100%;
+    color: #fff;
     font-size: 3rem;
 }
 
+.nav-footer-container h3 {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.copyright-container p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
+
 /* mobile media query */
+
+
+@media (max-width:840px) {
+
+    .menu-container {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0px 0px 0px;
+        gap:40px;
+    }
+
+    .social-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap: 60px;
+        padding:50px 0px 20px 0px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding:0px 0px 40px 0px;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:0px 0px 40px 0px;
+    }
+
+    .nav-final {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+
+
+
 @media (max-width: 428px) {
     /* header section */
-    
+    .title-container h1 {
+        font-size:2.7rem;
+        color: #fff;
+    }
+
+    .menu-container {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0px 0px 0px;
+        gap:20px;
+    }
+
+    .social-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap:60px;
+        padding:50px 0px 20px 0px;
+    }
 
     /* gallery section */
     .gallery {
         height: auto;
     }
-    
+
+    img.responsive-image{
+        width:100% !important;
+        height:auto !important;
+    }
+
+    .gallery h2 {
+        color: #fff;
+        font-size:2.5rem;
+        padding: 40px 0px 40px 0px;
+    }
+
     /* about us section */
 
     .about {
-        height: 200vh;
+        height:auto;
     }
-    
+
     .about h2 {
         width: 100%;
         padding-top: 5vh;
     }
-    
+
     .about-container .text {
         width: 85%;
     }
-    
+
     /* contact us section */
     .contact h3 {
         padding-top: 2.5vh;
     }
-    
+
     .info {
         flex-wrap: wrap;
     }
-    
+
     .address {
         width: 100%;
         padding-bottom: 2.5vh;
     }
-    
+
     .hours {
         width: 100%;
     }
-    
+
     .contacts {
         width: 100%;
         padding-bottom: 2.5vh;
@@ -293,5 +588,31 @@ footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        padding: 40px 0px 40px 0px;
+    }
+
+    .copyright-container p {
+        color: #fff;
+        font-size: 1.5rem;
+        text-align: center;
+        width: 60%;
+        margin: auto;
+    }
+
+    .form-container h2 {
+        width: 100%;
+        color: #fff;
+        font-size: 3rem;
+        text-align: center;
+        line-height: 1.2;
+        padding: 0px 0px 30px 0px;
     }
 }

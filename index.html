@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Sprint Challenge - Anasayfa</title>
+	<title>Anasayfa</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto|Rubik" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/5b12ffad4b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/index.css">
@@ -49,24 +49,23 @@
 		<section class="gallery">
 			<div>
 				<h2>YEMEKLERİMİZ</h2>
-
-				img/food-avocadotoast.jpg
-
-				img/food-burger.jpg
-
-				img/food-poutine.jpg
-
-				img/food-ribs.jpg
-
-				img/food-sandwich.jpg
-
-				img/food-sausage.jpg
-
-				img/food-steak.jpg
-
-				img/food-tacos.jpg
-
-				img/food-wings.jpg
+				<img class="responsive-image" src="img/food-avocadotoast.jpg" alt="food-avocadotoast"
+					style="width:428px;height:285px;">
+				<img class="responsive-image" src="img/food-burger.jpg" alt="food-burger"
+					style="width:428px;height:285px;">
+				<img class="responsive-image" src="img/food-poutine.jpg" alt="food-poutine"
+					style="width:428px;height:285px;">
+				<img class="responsive-image" src="img/food-ribs.jpg" alt="food-ribs" style="width:428px;height:285px;">
+				<img class="responsive-image" src="img/food-sandwich.jpg" alt="food-sandwich"
+					style="width:428px;height:285px;">
+				<img class="responsive-image" src="img/food-sausage.jpg" alt="food-sausage"
+					style="width:428px;height:285px;">
+				<img class="responsive-image" src="img/food-steak.jpg" alt="food-steak"
+					style="width:428px;height:285px;">
+				<img class="responsive-image" src="img/food-tacos.jpg" alt="food-tacos"
+					style="width:428px;height:285px;">
+				<img class="responsive-image" src="img/food-wings.jpg" alt="food-wings"
+					style="width:428px;height:285px;">
 			</div>
 		</section>
 
@@ -82,7 +81,7 @@
 				</div>
 
 				<div class="text">
-					<h3>Güzel Yemekler, Güzel İnsanlar</h3>
+					<h3>Güzel Yemekler, Güzel İnsanlar</h3><br /><br />
 					<p>Quis duis aute, shank ut pork eiusmod in ball tip jerky non. Short ribs tail dolore, fatback in
 						tempor meatloaf pig sunt porchetta beef. Ad hamburger pig veniam, andouille exercitation cillum
 						eiusmod doner irure tail burgdoggen rump chislic officia. Pancetta frankfurter sed, est t-bone
@@ -130,7 +129,7 @@
 						<h3>İletişim</h3>
 
 						<div>
-							<a id="phone" href="tel:999-999-9999">999-999-9999</a>
+							<a id="phone" href="tel:999-999-9999">999-999-9999</a><br />
 							<a id="email" href="mailto:restoran@boomer.com">restoran@ergineer.com</a>
 						</div>
 					</div>
@@ -144,15 +143,39 @@
 		<!-- footer -->
 		<footer>
 			<!-- email signup -->
-			Mail listemize katılın!
-			Üye Ol
-			<!-- nav -->
-			Menü
-			Rezervasyonlar
-			Özel Teklifler
-			İletişim
+			<div class="footer-container">
+				<div class="form-container">
+					<div class="form-container-header">
+						<h2>Mail listemize katılın!</h2>
+					</div>
+					<div class="form-container-input">
+						<input type="text" placeholder="E-posta Adresi"><br>
+						<button>Üye Ol</button>
+					</div>
+				</div>
+				<nav>
+					<div class="nav-footer-container">
+						<div class="nav-final">
+							<a href="menu.html" target="_blank">
+								<h3>Menü</h3>
+							</a>
+							<a href="Rezervasyonlar.html" target="_blank">
+								<h3>Rezervasyonlar</h3>
+							</a>
+							<a href="özelteklifler.html" target="_blank">
+								<h3>Özel Teklifler</h3>
+							</a>
+							<a href="İletişim.html" target="_blank">
+								<h3>İletişim</h3>
+							</a>
+						</div>
+						<div class="copyright-container">
+							<p> ©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.</p>
+						</div>
+					</div>
+				</nav>
+			</div>
 			<!-- copyright -->
-			©2022 ERGİNEER Restoran Zinciri, Tüm hakları saklıdır.
 		</footer>
 	</div>
 </body>
